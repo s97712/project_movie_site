@@ -170,3 +170,8 @@ def open_movies_page(movies):
   # open the output file in the browser
   url = os.path.abspath(output_file.name)
   webbrowser.open('file://' + url, new=2) # open in a new tab, if possible
+
+def create_page_content(movies):
+  rendered_content = main_page_content.format(movie_tiles=create_movie_tiles_content(movies))
+  return main_page_head + rendered_content
+	

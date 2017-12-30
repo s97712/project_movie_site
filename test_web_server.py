@@ -15,8 +15,8 @@ def start(host, port, content):
 def send_page(s, content):
 	data = s.recv(10240)
 	
-	print("recv:");
-	print(data.decode("utf-8"));
+	#print("recv:");
+	#print(data.decode("utf-8"));
 
 	template = "";
 	template += "HTTP/1.1 200 OK\r\n";
@@ -26,8 +26,9 @@ def send_page(s, content):
 	template += content;
 
 
-	print("send:");
-	print(template);
+	#print("send:");
+	#print(template);
+
 	data = bytes(template,encoding="utf-8");
 	s.sendall(data);
 	s.close();
