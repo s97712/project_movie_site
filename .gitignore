@@ -1,2 +1,8 @@
 __pycache__/
 fresh_tomatoes.html
+Doxyfile
+doc
+source
+build
+Makefile
+make.bat
