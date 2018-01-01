@@ -1,11 +1,13 @@
-优达学城电影网站项目
+#优达学城电影网站项目
 
-环境要求:
+#环境要求:
 	python3
 
-运行项目:
+#运行项目:
+```shell
 	# python entertainment_center.py
 
+```
 
 参考资料:
 http://blog.csdn.net/afer198215/article/details/6740443
