@@ -1,7 +1,21 @@
-import socket
+"""
+	超简陋的web服务器，调试生成的html代码时使用
 
+	:anthor:	s97712
+	:date:		2018-01-01
+"""
+
+import socket
 def start(host, port, content):
-	
+	"""
+		启动web服务器
+
+		Args:
+			host:	监听的ip地址
+			port:	监听的商品
+			content:web服务器要显示的内容
+
+	"""
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM);
 	s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1);
 	s.bind((host,port));
