@@ -12,7 +12,7 @@ def start(host, port, content):
 
 		Args:
 			host:	监听的ip地址
-			port:	监听的商品
+			port:	监听的端口
 			content:web服务器要显示的内容
 
 	"""
